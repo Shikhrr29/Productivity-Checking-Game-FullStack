@@ -5,3 +5,4 @@ coverage/
 .env*.local
 dist/
 *.tsbuildinfo
+.env.production

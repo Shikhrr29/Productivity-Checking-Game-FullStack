@@ -5,7 +5,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 bat '''
-                ssh -o StrictHostKeyChecking=no -i "C:\\JenkinsKeys\\dayforge-key1.pem" ubuntu@ec2-52-15-78-191.us-east-2.compute.amazonaws.com ^
+                ssh -o StrictHostKeyChecking=no -i "C:/Users/sksum/Downloads/dayforge-key1.pem" ubuntu@ec2-52-15-78-191.us-east-2.compute.amazonaws.com ^
                 "cd ~/Productivity-Checking-Game-FullStack && \
                 git checkout deployment && \
                 git pull origin deployment && \
